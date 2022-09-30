@@ -5,9 +5,9 @@ b=1;
 c=0.25;
 fx = inline('1/(1+x)','x');
 h=[];
-h(1)=0;
+h(1)=a;
 even=0;odd=0;
-for i = 2:b/c
+for i = 2:(b/c)
     h(i)=h(i-1)+c;
 end
 
@@ -19,4 +19,4 @@ for j =1:(b/c-1)
     end
 end
 
-ans = (c/3)*((fx(0)+fx(h(b/c)))+(4*odd)+(2*even))
+ans = (c/3)*((fx(0)+fx(b))+(4*odd)+(2*even))
