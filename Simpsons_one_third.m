@@ -19,4 +19,4 @@ for j =1:(b/c-1)
     end
 end
 
-ans = (c/3)*((fx(0)+fx(b))+(4*odd)+(2*even))
+ans = (c/3)*((fx(a)+fx(b))+(4*odd)+(2*even))
